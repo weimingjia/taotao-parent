@@ -127,6 +127,7 @@ public class CartController {
 
         cartService.deleteItemByCart(user.getId(),id);
 
+        //jygjg
         return "redirect:/cart /cart.html";
     }
 
