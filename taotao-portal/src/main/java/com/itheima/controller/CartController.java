@@ -125,6 +125,7 @@ public class CartController {
 
         User user = RedisUtil.findUserByTicket(template, ticket);
  //123
+        //456
         cartService.deleteItemByCart(user.getId(),id);
 
         return "redirect:/cart /cart.html";
