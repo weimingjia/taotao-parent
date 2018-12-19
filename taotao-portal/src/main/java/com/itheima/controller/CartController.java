@@ -124,7 +124,7 @@ public class CartController {
         String ticket = CookieUtil.findTicket(request);
 
         User user = RedisUtil.findUserByTicket(template, ticket);
-
+ //123
         cartService.deleteItemByCart(user.getId(),id);
 
         return "redirect:/cart /cart.html";
